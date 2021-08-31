@@ -260,6 +260,9 @@ public class MainActivity extends Activity {
             Message msg = new Message();
             msg.what = 1;
             try {
+                /**
+                 * 激活设备   参数1：设备序列号   参数2：密码
+                 */
                 int iRet = m_sadp.SADP_ActivateDevice("iDS-2CD6810F/C20171215AAWR156541444", "hik12345");//63
                 if (iRet == 0) {
                     //Log.e(TAG, "SADP_ActivateDevice fail Errorcode is:" + m_sadp.SADP_GetLastError());
